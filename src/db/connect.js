@@ -13,10 +13,6 @@ try {const instance = await mongoose.connect(`${process.env.MONGODB_URI}`)
 
 console.log("DB connected ");
 
-app.listen(process.env.PORT,()=>{
-    console.log("PORT IS LISTENING");
-    
-})
 
 } catch (error) {
     console.log(error);
